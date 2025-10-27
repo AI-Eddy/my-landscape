@@ -1,0 +1,9 @@
+items:
+  - name: Mein Tool
+    category: Tools
+    homepage_url: https://example.com
+    logo: mein-tool.svg
+  - name: Zweites Tool
+    category: Tools
+    homepage_url: https://example.org
+    logo: zweites-tool.svg
