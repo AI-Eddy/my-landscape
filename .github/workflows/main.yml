@@ -1,0 +1,58 @@
+Name: Build & Deploy Landscape
+
+on:
+  push:
+    branches: [ main ]      # führt den Build bei jedem Commit auf main aus
+  workflow_dispatch:         # erlaubt manuelles Starten des Workflows
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install landscape2
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/bin"
+          DL_URL="$(curl -fsSL https://api.github.com/repos/cncf/landscape2/releases/latest \
+            | grep browser_download_url | grep linux-amd64 | cut -d '"' -f 4)"
+          echo "Downloading: $DL_URL"
+          curl -fsSL "$DL_URL" -o "$HOME/bin/landscape2"
+          chmod +x "$HOME/bin/landscape2"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+          which landscape2
+          landscape2 --version || true
+
+      - name: Build site
+        shell: bash
+        run: |
+          landscape2 build \
+            --data-file data.yml \
+            --settings-file settings.yml \
+            --guide-file guide.yml \
+            --logos-path my-landscape \
+            --output-dir site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
