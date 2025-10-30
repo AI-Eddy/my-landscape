@@ -1,7 +1,7 @@
-foundation:
-  name: "MEC Landscape"
+foundation: "MEC Landscape"
 
 title: "MEC Landscape"
 description: "Eigene Landscape mit landscape2"
 theme:
   dark_mode: true
+
