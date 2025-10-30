@@ -3,7 +3,7 @@ name: Build & Deploy Landscape
 on:
   push:
     branches: [ main ]      # führt den Build bei jedem Commit auf main aus
-  workflow_dispatch:         # erlaubt manuelles Starten des Workflows
+  workflow_dispatch:         # erlaubt manuelles Starten
 
 permissions:
   contents: write
@@ -14,23 +14,26 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ Repository-Inhalt holen
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 2️⃣ landscape2 CLI installieren (stabiler Download)
       - name: Install landscape2
         shell: bash
         run: |
-          set -euo pipefail
-          mkdir -p "$HOME/bin"
-          DL_URL="$(curl -fsSL https://api.github.com/repos/cncf/landscape2/releases/latest \
-            | grep browser_download_url | grep linux-amd64 | cut -d '"' -f 4)"
-          echo "Downloading: $DL_URL"
-          curl -fsSL "$DL_URL" -o "$HOME/bin/landscape2"
-          chmod +x "$HOME/bin/landscape2"
+          set -Eeuo pipefail
+          VERSION="v1.1.0"   # feste Version
+          TARGET="$HOME/bin/landscape2"
+          mkdir -p "$(dirname "$TARGET")"
+          curl -fL "https://github.com/cncf/landscape2/releases/download/${VERSION}/landscape2-linux-amd64" -o "$TARGET"
+          chmod +x "$TARGET"
           echo "$HOME/bin" >> "$GITHUB_PATH"
+          ls -l "$TARGET"
           which landscape2
           landscape2 --version || true
 
+      # 3️⃣ Landscape-Website bauen
       - name: Build site
         shell: bash
         run: |
@@ -41,6 +44,7 @@ jobs:
             --logos-path my-landscape \
             --output-dir site
 
+      # 4️⃣ Für GitHub Pages bereitstellen
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
