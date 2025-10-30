@@ -6,4 +6,4 @@ items:
   - name: Zweites Tool
     category: Tools
     homepage_url: https://example_zweites_tool.org
-    logo: ""my-landscape/zweites-tool.svg"
+    logo: "my-landscape/zweites-tool.svg"
