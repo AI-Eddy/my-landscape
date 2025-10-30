@@ -2,8 +2,8 @@ name: Build & Deploy Landscape
 
 on:
   push:
-    branches: [ main ]      # startet den Build bei jedem Commit auf main
-  workflow_dispatch:         # erlaubt manuelles Starten
+    branches: [ main ]      # bei jedem Commit auf main
+  workflow_dispatch:         # manueller Start-Button
 
 permissions:
   contents: write
@@ -14,41 +14,30 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Repository-Inhalt holen
+      # 1) Repo auschecken
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2️⃣ Neueste landscape2-Version installieren (automatisch via GitHub API)
-      - name: Install landscape2 (latest linux amd64)
+      # 2) Go-Toolchain einrichten (wir bauen landscape2 aus dem Source)
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22.x'
+
+      # 3) landscape2 aus dem offiziellen Repo bauen
+      - name: Build landscape2 from source
         shell: bash
         run: |
           set -Eeuo pipefail
-          mkdir -p "$HOME/bin"
-
-          # Neueste Release ermitteln und passende Binary-URL holen
-          API_URL="https://api.github.com/repos/cncf/landscape2/releases/latest"
-          DL_URL="$(curl -fsSL "$API_URL" \
-            | jq -r '.assets[]
-                     | select(.name | test("linux.*(amd64|x86_64)"; "i"))
-                     | .browser_download_url' \
-            | head -n1)"
-
-          if [[ -z "${DL_URL:-}" ]]; then
-            echo "❌ Konnte keine passende linux-amd64 Binary finden!"
-            echo "👉 Prüfe https://github.com/cncf/landscape2/releases manuell."
-            exit 1
-          fi
-
-          echo "⬇️  Downloading: $DL_URL"
-          curl -fsSL "$DL_URL" -o "$HOME/bin/landscape2"
+          git clone --depth 1 https://github.com/cncf/landscape2.git
+          cd landscape2
+          go build -o "$HOME/bin/landscape2" .
           chmod +x "$HOME/bin/landscape2"
           echo "$HOME/bin" >> "$GITHUB_PATH"
-
-          echo "✅ Installation abgeschlossen:"
           which landscape2
           landscape2 --version || true
 
-      # 3️⃣ Deine Landscape-Seite bauen
+      # 4) Deine statische Site generieren
       - name: Build site
         shell: bash
         run: |
@@ -59,13 +48,12 @@ jobs:
             --logos-path my-landscape \
             --output-dir site
 
-      # 4️⃣ Output für GitHub Pages hochladen
+      # 5) Für GitHub Pages bereitstellen
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
-  # 5️⃣ Deployment auf GitHub Pages
   deploy:
     needs: build
     runs-on: ubuntu-latest
