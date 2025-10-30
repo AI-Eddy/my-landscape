@@ -1,6 +1,7 @@
-title: "Meine Landscape"
-logo: site-logo.svg
-color1: "rgba(0, 107, 204, 1)"
-color2: "rgba(255, 255, 255, 1)"
-group_by:
-  - category
+foundation:
+  name: "MEC Landscape"
+
+title: "MEC Landscape"
+description: "Eigene Landscape mit landscape2"
+theme:
+  dark_mode: true
