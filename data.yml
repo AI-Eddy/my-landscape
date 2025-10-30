@@ -1,5 +1,5 @@
 landscape:
-  - category: "Edge Tools"
+  - name: "Edge Tools"
     subcategories:
       - name: "Vendors"
         items:
