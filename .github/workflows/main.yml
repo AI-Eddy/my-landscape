@@ -2,7 +2,7 @@ name: Build & Deploy Landscape
 
 on:
   push:
-    branches: [ main ]      # führt den Build bei jedem Commit auf main aus
+    branches: [ main ]      # startet den Build bei jedem Commit auf main
   workflow_dispatch:         # erlaubt manuelles Starten
 
 permissions:
@@ -18,22 +18,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2️⃣ landscape2 CLI installieren (stabiler Download)
-      - name: Install landscape2
+      # 2️⃣ Neueste landscape2-Version installieren (automatisch via GitHub API)
+      - name: Install landscape2 (latest linux amd64)
         shell: bash
         run: |
           set -Eeuo pipefail
-          VERSION="v1.1.0"   # feste Version
-          TARGET="$HOME/bin/landscape2"
-          mkdir -p "$(dirname "$TARGET")"
-          curl -fL "https://github.com/cncf/landscape2/releases/download/${VERSION}/landscape2-linux-amd64" -o "$TARGET"
-          chmod +x "$TARGET"
+          mkdir -p "$HOME/bin"
+
+          # Neueste Release ermitteln und passende Binary-URL holen
+          API_URL="https://api.github.com/repos/cncf/landscape2/releases/latest"
+          DL_URL="$(curl -fsSL "$API_URL" \
+            | jq -r '.assets[]
+                     | select(.name | test("linux.*(amd64|x86_64)"; "i"))
+                     | .browser_download_url' \
+            | head -n1)"
+
+          if [[ -z "${DL_URL:-}" ]]; then
+            echo "❌ Konnte keine passende linux-amd64 Binary finden!"
+            echo "👉 Prüfe https://github.com/cncf/landscape2/releases manuell."
+            exit 1
+          fi
+
+          echo "⬇️  Downloading: $DL_URL"
+          curl -fsSL "$DL_URL" -o "$HOME/bin/landscape2"
+          chmod +x "$HOME/bin/landscape2"
           echo "$HOME/bin" >> "$GITHUB_PATH"
-          ls -l "$TARGET"
+
+          echo "✅ Installation abgeschlossen:"
           which landscape2
           landscape2 --version || true
 
-      # 3️⃣ Landscape-Website bauen
+      # 3️⃣ Deine Landscape-Seite bauen
       - name: Build site
         shell: bash
         run: |
@@ -44,12 +59,13 @@ jobs:
             --logos-path my-landscape \
             --output-dir site
 
-      # 4️⃣ Für GitHub Pages bereitstellen
+      # 4️⃣ Output für GitHub Pages hochladen
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
+  # 5️⃣ Deployment auf GitHub Pages
   deploy:
     needs: build
     runs-on: ubuntu-latest
