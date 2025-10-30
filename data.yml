@@ -1,9 +1,11 @@
-items:
-  - name: Mein Tool
-    category: Tools
-    homepage_url: https://example.com
-    logo: "my-landscape/mein-tool.svg"
-  - name: Zweites Tool
-    category: Tools
-    homepage_url: https://example_zweites_tool.org
-    logo: "my-landscape/zweites-tool.svg"
+landscape:
+  - category: "Edge Tools"
+    subcategories:
+      - name: "Vendors"
+        items:
+          - name: "Mein Tool"
+            homepage_url: "https://example.com"
+            logo: "my-landscape/mein-tool.svg"
+          - name: "Zweites Tool"
+            homepage_url: "https://example2.com"
+            logo: "my-landscape/zweites-tool.svg"
