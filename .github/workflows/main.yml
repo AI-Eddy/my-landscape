@@ -1,4 +1,4 @@
-Name: Build & Deploy Landscape
+name: Build & Deploy Landscape
 
 on:
   push:
