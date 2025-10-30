@@ -2,8 +2,8 @@ name: Build & Deploy Landscape
 
 on:
   push:
-    branches: [ main ]      # bei jedem Commit auf main
-  workflow_dispatch:         # manueller Start-Button
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,30 +14,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1) Repo auschecken
       - name: Checkout
         uses: actions/checkout@v4
 
-      # 2) Go-Toolchain einrichten (wir bauen landscape2 aus dem Source)
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.22.x'
-
-      # 3) landscape2 aus dem offiziellen Repo bauen
-      - name: Build landscape2 from source
+      # Installiere landscape2 via offizielles Installer-Script (empfohlen)
+      - name: Install landscape2
         shell: bash
         run: |
           set -Eeuo pipefail
-          git clone --depth 1 https://github.com/cncf/landscape2.git
-          cd landscape2
-          go build -o "$HOME/bin/landscape2" .
-          chmod +x "$HOME/bin/landscape2"
-          echo "$HOME/bin" >> "$GITHUB_PATH"
+          # Nimm eine veröffentlichte Version aus den Releases (z.B. v0.12.0)
+          VERSION="v0.12.0"
+          curl -fsSL "https://github.com/cncf/landscape2/releases/download/${VERSION}/landscape2-installer.sh" | sh
+          # Der Installer legt die Binary typischerweise unter ~/.local/bin ab:
+          export PATH="$HOME/.local/bin:$PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
           which landscape2
           landscape2 --version || true
 
-      # 4) Deine statische Site generieren
       - name: Build site
         shell: bash
         run: |
@@ -48,7 +41,6 @@ jobs:
             --logos-path my-landscape \
             --output-dir site
 
-      # 5) Für GitHub Pages bereitstellen
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
