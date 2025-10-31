@@ -3,16 +3,17 @@ landscape:
     subcategories:
       - name: "MNOs"
         items:
-          - name: Deutsche Telekom AG
+          - item: 
+            name: Deutsche Telekom AG
             homepage_url: https://telekom.com/
             logo: deutsche_telekom_ag.svg
             description: Founded in 1995, Deutsche Telekom AG is a Germany-based integrated telecommunications provider, offering its customers around the world a portfolio of services in the areas of telecommunications and information technology.
             crunchbase: https://www.crunchbase.com/organization/deutsche-telekom
             twitter: https://twitter.com/deutschetelekom
             extra:
-              linkedin_url: https://www.linkedin.com/company/telekom
-
-          - name: Vodafone Group Plc.
+              linkedin_url: https://www.linkedin.com/company/telekom-
+          - item:
+            name: Vodafone Group Plc.
             homepage_url: https://vodafone.com/
             logo: vodafone_group_plc.svg
             description: |-
@@ -21,4 +22,18 @@ landscape:
             twitter: https://twitter.com/VodafoneGroup
             extra:
               linkedin_url: https://www.linkedin.com/company/vodafone
-          
+           - item:
+            name: Orange SA
+            homepage_url: https://orange.com/
+            logo: orange_sa.svg
+            description: |-
+              Orange is one of the world’s leading telecommunications operators with revenues of 39.7 billion euros in 2023 and 128,000 employees worldwide at 30 June 2024, including 72,000 employees in France. The Group has a total customer base of 285 million customers worldwide at 30 June 2024, including 246 million mobile customers and 21 million fixed broadband customers. These figures have been restated to account for the deconsolidation of certain activities in Spain following the creation of MASORANGE. The Group is present in 26 countries (including non-consolidated countries).
+              Orange is also a leading provider of global IT and telecommunication services to multinational companies under the brand Orange Business. In February 2023, the Group presented its strategic plan 'Lead the Future', built on a new business model and guided by responsibility and efficiency. 'Lead the Future' capitalizes on network excellence to reinforce Orange's leadership in service quality.
+              Orange is listed on Euronext Paris (symbol ORA) and on the New York Stock Exchange (symbol ORAN).
+              For more information on the internet and on your mobile: www.orange.com, www.orange-business.com and the Orange News app or to follow us on X: @presseorange.
+
+              Orange and any other Orange product or service names included in this material are trademarks of Orange or Orange Brand Services Limited.
+            crunchbase: https://www.crunchbase.com/organization/orange
+            twitter: https://twitter.com/orange
+            extra:
+              linkedin_url: https://www.linkedin.com/company/orange-services
