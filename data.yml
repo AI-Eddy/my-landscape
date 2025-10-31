@@ -6,9 +6,19 @@ landscape:
           - name: Deutsche Telekom AG
             homepage_url: https://telekom.com/
             logo: deutsche_telekom_ag.svg
-            logo_width: 120   
             description: Founded in 1995, Deutsche Telekom AG is a Germany-based integrated telecommunications provider, offering its customers around the world a portfolio of services in the areas of telecommunications and information technology.
             crunchbase: https://www.crunchbase.com/organization/deutsche-telekom
             twitter: https://twitter.com/deutschetelekom
             extra:
               linkedin_url: https://www.linkedin.com/company/telekom
+
+          - name: Vodafone Group Plc.
+            homepage_url: https://vodafone.com/
+            logo: vodafone_group_plc.svg
+            description: |-
+              Vodafone is one of the worlds largest telecommunications companies and provides a range of services including voice, messaging, data and fixed communications. Vodafone has mobile operations in 26 countries, partners with mobile networks in 51 more, and fixed broadband operations in 17 markets. As of June 2016, Vodafone had 465 million mobile customers and 13.7 million fixed broadband customers.
+            crunchbase: https://www.crunchbase.com/organization/vodafone
+            twitter: https://twitter.com/VodafoneGroup
+            extra:
+              linkedin_url: https://www.linkedin.com/company/vodafone
+          
