@@ -38,13 +38,23 @@ jobs:
             --data-file data.yml \
             --settings-file settings.yml \
             --guide-file guide.yml \
-            --logos-path my-landscape/ \
+            --logos-path my-landscape/hosted_logos \
             --output-dir site
+
+      # ✅ optional: korrigiert Pfade für GitHub Pages (z.B. /my-landscape/)
+      - name: Prefix absolute paths for Project Pages
+        env:
+          BASE: "/my-landscape"
+        run: |
+          find site -name "*.html" -print0 | while IFS= read -r -d '' f; do
+            sed -i -E "s#(src|href)=\"/+#\1=\"${BASE}/#g" "$f"
+          done
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -55,5 +65,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
-    
