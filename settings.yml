@@ -1,5 +1,6 @@
 foundation: "MEC Landscape"
 url: "https://ai-eddy.github.io/my-landscape/"
+base_path: "/my-landscape" 
 title: "MEC Landscape"
 description: "Eigene Landscape mit landscape2"
 theme:
