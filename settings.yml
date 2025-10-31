@@ -1,5 +1,27 @@
 foundation: MEC-Landscape
 url: https://ai-eddy.github.io/
+categories:
+  - # Name of the category (required).
+    name: My category
+
+    # List of subcategories in this category (required).
+    subcategories:
+      - # Name of the subcategory (required).
+        name: My subcategory
+
+        # List of items in this subcategory (required).
+        items:
+          - # Name of the item (required).
+            name: My item
+
+            # Homepage URL (required).
+            homepage_url: https://5gmec4.eu/
+
+            # File name of the logo (required). The provided logo file is expected to be located in
+            # the landscape logos path (i.e. `hosted-logos`). URLs are not supported, it must be a
+            # file name. The logo file must be an SVG file.
+
+
 title: "MEC Landscape"
 description: "Eigene Landscape mit landscape2"
 header:
