@@ -2,6 +2,7 @@ foundation: "MEC Landscape"
 url: "https://ai-eddy.github.io/my-landscape"   # ohne trailing slash
 base_path: "/my-landscape"                      # mit führendem Slash
 title: "MEC Landscape"
+logo: "5GMEC_Icon_blue.png"
 description: "Eigene Landscape mit landscape2"
 grid_items_size: large
 
