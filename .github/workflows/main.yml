@@ -38,7 +38,7 @@ jobs:
             --data-file data.yml \
             --settings-file settings.yml \
             --guide-file guide.yml \
-            --logos-path \
+            --logos-path hosted_logos/
             --output-dir site
 
       # ✅ optional: korrigiert Pfade für GitHub Pages (z.B. /my-landscape/)
