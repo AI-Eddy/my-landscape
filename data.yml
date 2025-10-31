@@ -3,10 +3,10 @@ landscape:
     subcategories:
       - name: "MNOs"
         items:
-          - name: "Telekom"
+          - name: "MNO_1"
             homepage_url: "https://example.com"
             logo: mein-tool.svg
-          - name: "Zweites Tool"
+          - name: "MNO_2"
             homepage_url: "https://example2.com"
             logo: zweites-tool.svg
           - name: Deutsche Telekom AG
