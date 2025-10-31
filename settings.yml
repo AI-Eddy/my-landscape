@@ -3,5 +3,5 @@ url: "https://ai-eddy.github.io/my-landscape"   # ohne trailing slash
 base_path: "/my-landscape"                      # mit führendem Slash
 title: "MEC Landscape"
 description: "Eigene Landscape mit landscape2"
-theme:
-  dark_mode: true
+grid_items_size: large
+
