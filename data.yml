@@ -22,7 +22,7 @@ landscape:
             twitter: https://twitter.com/VodafoneGroup
             extra:
               linkedin_url: https://www.linkedin.com/company/vodafone
-           - item:
+          - item:
             name: Orange SA
             homepage_url: https://orange.com/
             logo: orange_sa.svg
@@ -37,3 +37,12 @@ landscape:
             twitter: https://twitter.com/orange
             extra:
               linkedin_url: https://www.linkedin.com/company/orange-services
+          - item:
+            name: Telefonica, S.A.
+            homepage_url: https://telefonica.com/
+            logo: telefonica_s_a.svg
+            description: Telefónica, SA is a Spanish multinational telecommunications company headquartered in Madrid, Spain.
+            crunchbase: https://www.crunchbase.com/organization/telefonica
+            twitter: https://twitter.com/Telefonica
+            extra:
+              linkedin_url: https://www.linkedin.com/company/telefonica-global-solutions
