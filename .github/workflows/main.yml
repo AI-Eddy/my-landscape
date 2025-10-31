@@ -38,7 +38,7 @@ jobs:
             --data-file data.yml \
             --settings-file settings.yml \
             --guide-file guide.yml \
-            --logos-path my-landscape \
+            --logos-path my-landscape/ \
             --output-dir site
 
       - name: Upload artifact
