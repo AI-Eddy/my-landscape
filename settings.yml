@@ -6,8 +6,6 @@ header:
   links:
     github: "https://github.com/AI-Eddy/my-landscape/"
   logo: "5GMEC_Icon_blue.png"
-  motd: |
-    "Welcome to the CNCF Landscape!"
 description: "Eigene Landscape mit landscape2"
 grid_items_size: large
 
