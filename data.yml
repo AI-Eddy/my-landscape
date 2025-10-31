@@ -4,8 +4,8 @@ landscape:
       - name: "MNOs"
         items:
           - name: Deutsche Telekom AG
-            homepage_url: "https://telekom.com/"
-            logo: "deutsche_telekom_ag.svg
+            homepage_url: https://telekom.com/
+            logo: deutsche_telekom_ag.svg
             description: Founded in 1995, Deutsche Telekom AG is a Germany-based integrated telecommunications provider, offering its customers around the world a portfolio of services in the areas of telecommunications and information technology.
             crunchbase: https://www.crunchbase.com/organization/deutsche-telekom
             twitter: https://twitter.com/deutschetelekom
