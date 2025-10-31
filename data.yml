@@ -1,11 +1,19 @@
 landscape:
-  - name: "Edge Tools"
+  - name: "Edge Infrastructure"
     subcategories:
-      - name: "Vendors"
+      - name: "MNOs"
         items:
-          - name: "Mein Tool"
+          - name: "Telekom"
             homepage_url: "https://example.com"
             logo: "my-landscape/mein-tool.svg"
           - name: "Zweites Tool"
             homepage_url: "https://example2.com"
             logo: "my-landscape/zweites-tool.svg"
+          - name: Deutsche Telekom AG
+            homepage_url: https://telekom.com/
+            logo: "deutsche_telekom_ag.svg"
+            description: Founded in 1995, Deutsche Telekom AG is a Germany-based integrated telecommunications provider, offering its customers around the world a portfolio of services in the areas of telecommunications and information technology.
+            crunchbase: https://www.crunchbase.com/organization/deutsche-telekom
+            twitter: https://twitter.com/deutschetelekom
+            extra:
+              linkedin_url: https://www.linkedin.com/company/telekom
