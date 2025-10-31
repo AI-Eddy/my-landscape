@@ -1,35 +1,66 @@
-name: Build Landscape from LFX
+name: Build & Deploy Landscape
 
 on:
-  workflow_dispatch:           # manuell starten
-  schedule:
-    - cron: "0 4 * * *"        # optional: täglich 04:00 UTC neu bauen
+  push:
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
-  contents: write              # nötig, um in gh-pages zu pushen
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
-      # (Optional) Damit im Log klar ist, was gebaut wird
-      - name: Show repo head
-        run: |
-          echo "Repository: ${{ github.repository }}"
-          echo "Ref:        ${{ github.ref }}"
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # LFX Landscape Tools ausführen – baut & pushed nach gh-pages
-      - name: Build via LFX tools
-        uses: jmertic/lfx-landscape-tools@20a188cdc3f2ee0318047b50de7e9b75b8f48268 # 20250528
-        with:
-          project_processing: skip          # übliche Default-Einstellung
+      - name: Install landscape2
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          VERSION="v0.12.0"
+          curl -fsSL "https://github.com/cncf/landscape2/releases/download/${VERSION}/landscape2-installer.sh" | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          which landscape2
+          landscape2 --version || true
+
+      # Build: logos are in hosted_logos/ at repo root
+      - name: Build site
+        shell: bash
+        run: |
+          set -euo pipefail
+          landscape2 build --data-file data.yml --settings-file settings.yml --guide-file guide.yml --logos-path hosted_logos --output-dir site
+
+      # (Safety) Prefix absolute / paths so they work under /my-landscape/
+      - name: Prefix absolute paths for Project Pages
         env:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          repository: ${{ github.repository }}
-          ref: ${{ github.ref }}
-
-      # (Optional) Zeig letzten Commit auf gh-pages im Log
-      - name: Print gh-pages head
+          BASE: "/my-landscape"
         run: |
-          git fetch origin gh-pages:gh-pages
-          git log -1 --pretty=oneline gh-pages || true
+          find site -name "*.html" -print0 | while IFS= read -r -d '' f; do
+            sed -i -E "s#(src|href)=\"/+#\1=\"${BASE}/#g" "$f"
+          done
+
+      # Optional: quick debug if something breaks
+      - name: Debug output
+        run: |
+          echo "Files in site/:"
+          find site -maxdepth 2 -type f | sort
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
