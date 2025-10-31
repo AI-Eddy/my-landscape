@@ -26,10 +26,8 @@ landscape:
             name: Orange SA
             homepage_url: https://orange.com/
             logo: orange.svg
-            description: |-
-              Orange is one of the world’s leading telecommunications operators with revenues of 39.7 billion euros in 2023 and 128,000 employees worldwide at 30 June 2024, including 72,000 employees in France. The Group has a total customer base of 285 million customers worldwide at 30 June 2024, including 246 million mobile customers and 21 million fixed broadband customers. These figures have been restated to account for the deconsolidation of certain activities in Spain following the creation of MASORANGE. The Group is present in 26 countries (including non-consolidated countries).
-              Orange is also a leading provider of global IT and telecommunication services to multinational companies under the brand Orange Business. In February 2023, the Group presented its strategic plan 'Lead the Future', built on a new business model and guided by responsibility and efficiency. 'Lead the Future' capitalizes on network excellence to reinforce Orange's leadership in service quality.
-              Orange is listed on Euronext Paris (symbol ORA) and on the New York Stock Exchange (symbol ORAN).
+            description: 
+              Orange is one of the world’s leading telecommunications operators with revenues of 39.7 billion euros in 2023 and 128,000 employees worldwide at 30 June 2024, including 72,000 employees in France. The Group has a total customer base of 285 million customers worldwide at 30 June 2024, including 246 million mobile customers and 21 million fixed broadband customers.
               Orange and any other Orange product or service names included in this material are trademarks of Orange or Orange Brand Services Limited.
             crunchbase: https://www.crunchbase.com/organization/orange
             twitter: https://twitter.com/orange
