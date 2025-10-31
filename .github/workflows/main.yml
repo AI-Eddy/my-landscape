@@ -45,20 +45,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
- # ✅ optional: korrigiert Pfade für GitHub Pages (z.B. /my-landscape/)
-      - name: Prefix absolute paths for Project Pages
-        env:
-          BASE: "/my-landscape"
-        run: |
-          find site -name "*.html" -print0 | while IFS= read -r -d '' f; do
-            sed -i -E "s#(src|href)=\"/+#\1=\"${BASE}/#g" "$f"
-          done
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-          
   deploy:
     needs: build
     runs-on: ubuntu-latest
