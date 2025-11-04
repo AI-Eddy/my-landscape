@@ -54,3 +54,14 @@ landscape:
           twitter: https://x.com/KontronElctrncs
           extra:
           linkedin_url: https://www.linkedin.com/company/kontronag/
+          - item: 
+          name: Eurotech S.p.A.
+          homepage_url:  https://eurotech.com
+          logo: Eurotech.svg
+          description: Eurotech offers a full Edge hardware portfolio (gateways, servers, AI systems, micro data-centres) designed for industrial, transport, energy & utility sectors. Their Edge Gateways feature ruggedisation, global cellular carrier certification and fieldbus connectivity. Their Edge Servers support VMs/containers on-premises and micro-datacentre setups. 
+          - item: 
+          name: Gcore
+          homepage_url: https://gcore.com
+          logo: Gcore.svg
+          description: Gcore is a Luxembourg-based edge cloud & AI infrastructure provider offering distributed low-latency PoPs, edge compute and network services across Europe — supporting edge deployments with scale and geographic reach. 
+
