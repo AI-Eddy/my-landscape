@@ -47,7 +47,7 @@ landscape:
         items:
         - item: 
           name: Kontron AG
-          homepage_url: kontron.com
+          homepage_url: https://kontron.com
           logo: Kontron.svg
           description: Kontron provides embedded/IoT hardware and specialised edge computing platforms e.g., 'Intelligent Network Edge' solutions where COTS white-box hardware hosts virtual network functions (vRAN, SD-WAN, routers) at the edge. Their portfolio covers embedded boards, edge servers, rugged systems and secure OS (KontronOS) for industrial & edge devices. 
           crunchbase: https://www.crunchbase.com/organization/kontron
