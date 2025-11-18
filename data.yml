@@ -191,11 +191,11 @@ landscape:
               European operator of edge data centers located near major network
               exchange points supporting cloud-edge and CDN deployments.
 
-          - name: "Interxion / Digital Realty"
+          - name: "Digital Realty"
             homepage_url: "https://www.interxion.com"
-            logo: "Interxion.svg"
+            logo: "DigitalReality.svg"
             description: >
-              Major European colocation provider operating highly connected facilities
+              Major American colocation provider operating highly connected facilities
               that serve as regional hubs for edge compute and cloud adjacency.
 
   - name: "Edge Software Platforms"
