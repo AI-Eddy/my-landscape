@@ -1,106 +1,32 @@
 landscape:
-  - category:
-    name: "Cross-Cutting Standards & Ecosystem"
+  - name: "Cross-Cutting Standards & Ecosystem"
     subcategories:
-      - subcategory:
-        name: "Cross-Cutting Standards & Ecosystem"
+      - name: "Cross-Cutting Standards & Ecosystem"
         items:
-          - item:
-              name: "ETSI"
-              homepage_url: https://www.etsi.org/technologies/multi-access-edge-computing
-              logo: ETSI.svg
-              description: >
-                The Multi-access Edge Computing (MEC) initiative is an Industry
-                Specification Group (ISG) within ETSI. The purpose of the ISG is
-                to create a standardized, open environment which allows efficient
-                and seamless integration of applications from vendors, service
-                providers, and third parties across multi-vendor MEC platforms.
-              crunchbase: https://www.crunchbase.com/organization/etsi"
-              extra:
-                linkedin_url: https://www.linkedin.com/company/etsi
-
-          - item:
-              name: "3GPP"
-              homepage_url: https://www.3gpp.org/technologies/edge-computing
-              logo: 3GPP.svg
-              description: >
-                The 3rd Generation Partnership Project (3GPP) unites seven
-                telecommunications standard development organizations (ARIB,
-                ATIS, CCSA, ETSI, TSDSI, TTA, TTC), known as Organizational
-                Partners. 3GPP specifications cover cellular telecommunications
-                technologies, including radio access, core network, and service
-                capabilities, providing a complete system description and
-                interworking hooks for non-3GPP access networks.
-              crunchbase: https://www.crunchbase.com/organization/3gpp
-              extra:
-                linkedin_url: https://www.linkedin.com/company/3gpp/
-
-  - category:
-    name: "Edge Infrastructure"
-    subcategories:
-      - subcategory:
-        name: "MNOs"
-        items:
-          - item: 
-            name: Deutsche Telekom AG
-            homepage_url: https://telekom.com/
-            logo: deutsche_telekom_ag.svg
-            description: Founded in 1995, Deutsche Telekom AG is a Germany-based integrated telecommunications provider, offering its customers around the world a portfolio of services in the areas of telecommunications and information technology.
-            crunchbase: https://www.crunchbase.com/organization/deutsche-telekom
-            twitter: https://twitter.com/deutschetelekom
+          - name: "ETSI"
+            homepage_url: "https://www.etsi.org/technologies/multi-access-edge-computing"
+            logo: "ETSI.svg"
+            description: >
+              The Multi-access Edge Computing (MEC) initiative is an Industry
+              Specification Group (ISG) within ETSI. The purpose of the ISG is
+              to create a standardized, open environment which allows efficient
+              and seamless integration of applications from vendors, service
+              providers, and third parties across multi-vendor MEC platforms.
+            crunchbase: "https://www.crunchbase.com/organization/etsi"
             extra:
-              linkedin_url: https://www.linkedin.com/company/telekom-
-          - item:
-            name: Vodafone Group Plc.
-            homepage_url: https://vodafone.com/
-            logo: vodafone_group_plc.svg
-            description: |-
-              Vodafone is one of the worlds largest telecommunications companies and provides a range of services including voice, messaging, data and fixed communications. Vodafone has mobile operations in 26 countries, partners with mobile networks in 51 more, and fixed broadband operations in 17 markets. As of June 2016, Vodafone had 465 million mobile customers and 13.7 million fixed broadband customers.
-            crunchbase: https://www.crunchbase.com/organization/vodafone
-            twitter: https://twitter.com/VodafoneGroup
-            extra:
-              linkedin_url: https://www.linkedin.com/company/vodafone
-          - item:
-            name: Orange SA
-            homepage_url: https://orange.com/
-            logo: orange.svg
-            description: 
-              Orange is one of the world’s leading telecommunications operators with revenues of 39.7 billion euros in 2023 and 128,000 employees worldwide at 30 June 2024, including 72,000 employees in France. The Group has a total customer base of 285 million customers worldwide at 30 June 2024, including 246 million mobile customers and 21 million fixed broadband customers.
-              Orange and any other Orange product or service names included in this material are trademarks of Orange or Orange Brand Services Limited.
-            crunchbase: https://www.crunchbase.com/organization/orange
-            twitter: https://twitter.com/orange
-            extra:
-              linkedin_url: https://www.linkedin.com/company/orange-services
-          - item:
-            name: Telefonica, S.A.
-            homepage_url: https://telefonica.com/
-            logo: telefonica_s_a.svg
-            description: Telefónica, SA is a Spanish multinational telecommunications company headquartered in Madrid, Spain.
-            crunchbase: https://www.crunchbase.com/organization/telefonica
-            twitter: https://twitter.com/Telefonica
-            extra:
-              linkedin_url: https://www.linkedin.com/company/telefonica-global-solutions
+              linkedin_url: "https://www.linkedin.com/company/etsi"
 
-        - subcategory:
-          name: "Hardware-Providers"
-          items:
-            - item: 
-              name: Kontron AG
-              homepage_url: https://kontron.com
-              logo: Kontron.svg
-              description: Kontron provides embedded/IoT hardware and specialised edge computing platforms e.g., 'Intelligent Network Edge' solutions where COTS white-box hardware hosts virtual network functions (vRAN, SD-WAN, routers) at the edge. Their portfolio covers embedded boards, edge servers, rugged systems and secure OS (KontronOS) for industrial & edge devices. 
-              crunchbase: https://www.crunchbase.com/organization/kontron
-              twitter: https://x.com/KontronElctrncs
-              extra:
-              linkedin_url: https://www.linkedin.com/company/kontronag/
-            - item: 
-              name: Eurotech S.p.A.
-              homepage_url:  https://eurotech.com
-              logo: Eurotech.svg
-              description: Eurotech offers a full Edge hardware portfolio (gateways, servers, AI systems, micro data-centres) designed for industrial, transport, energy & utility sectors. Their Edge Gateways feature ruggedisation, global cellular carrier certification and fieldbus connectivity. Their Edge Servers support VMs/containers on-premises and micro-datacentre setups. 
-            - item: 
-              name: Gcore
-              homepage_url: https://gcore.com
-              logo: Gcore.svg
-              description: Gcore is a Luxembourg-based edge cloud & AI infrastructure provider offering distributed low-latency PoPs, edge compute and network services across Europe — supporting edge deployments with scale and geographic reach. 
-
+          - name: "3GPP"
+            homepage_url: "https://www.3gpp.org/technologies/edge-computing"
+            logo: "3GPP.svg"
+            description: >
+              The 3rd Generation Partnership Project (3GPP) unites seven
+              telecommunications standard development organizations (ARIB, ATIS,
+              CCSA, ETSI, TSDSI, TTA, TTC), known as Organizational Partners.
+              3GPP specifications cover cellular telecommunications technologies,
+              including radio access, core network, and service capabilities, 
+              providing a complete system description and interworking hooks
+              for non-3GPP access networks.
+            crunchbase: "https://www.crunchbase.com/organization/3gpp"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/3gpp/"
