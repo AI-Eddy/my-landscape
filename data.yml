@@ -30,152 +30,153 @@ landscape:
             crunchbase: "https://www.crunchbase.com/organization/3gpp"
             extra:
               linkedin_url: "https://www.linkedin.com/company/3gpp/"
-- name: "Edge Infrastructure"
-  subcategories:
-    - name: "MNOs"
-      items:
-        - name: "Deutsche Telekom AG"
-          homepage_url: "https://telekom.com/"
-          logo: "deutsche_telekom_ag.svg"
-          description: >
-            Founded in 1995, Deutsche Telekom AG is a Germany-based integrated
-            telecommunications provider, offering its customers around the world
-            a portfolio of services in the areas of telecommunications and
-            information technology.
-          crunchbase: "https://www.crunchbase.com/organization/deutsche-telekom"
-          twitter: "https://twitter.com/deutschetelekom"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/telekom-"
-
-        - name: "Vodafone Group Plc."
-          homepage_url: "https://vodafone.com/"
-          logo: "vodafone_group_plc.svg"
-          description: >
-            Vodafone is one of the world's largest telecommunications companies
-            and provides a range of services including voice, messaging, data and
-            fixed communications. Vodafone has mobile operations in many
-            countries, extensive partner networks, and fixed broadband
-            operations in numerous markets.
-          crunchbase: "https://www.crunchbase.com/organization/vodafone"
-          twitter: "https://twitter.com/VodafoneGroup"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/vodafone"
-
-        - name: "Orange SA"
-          homepage_url: "https://orange.com/"
-          logo: "orange.svg"
-          description: >
-            Orange is one of the world’s leading telecommunications operators
-            with tens of billions of euros in revenues and more than one hundred
-            thousand employees worldwide. The Group has a large global customer
-            base, including hundreds of millions of mobile customers and tens of
-            millions of fixed broadband customers.
-          crunchbase: "https://www.crunchbase.com/organization/orange"
-          twitter: "https://twitter.com/orange"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/orange-services"
-
-        - name: "Telefonica, S.A."
-          homepage_url: "https://telefonica.com/"
-          logo: "telefonica_s_a.svg"
-          description: >
-            Telefónica, S.A. is a Spanish multinational telecommunications
-            company headquartered in Madrid, providing fixed and mobile services
-            and broadband networks in Europe and Latin America.
-          crunchbase: "https://www.crunchbase.com/organization/telefonica"
-          twitter: "https://twitter.com/Telefonica"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/telefonica-global-solutions"
-- name: "Edge Infrastructure"
-  subcategories:
-    - name: "MNOs"
-      items:
-        - name: "Deutsche Telekom AG"
-          homepage_url: "https://telekom.com/"
-          logo: "deutsche_telekom_ag.svg"
-          description: >
-            Founded in 1995, Deutsche Telekom AG is a Germany-based integrated
-            telecommunications provider, offering its customers around the world
-            a portfolio of services in the areas of telecommunications and
-            information technology.
-          crunchbase: "https://www.crunchbase.com/organization/deutsche-telekom"
-          twitter: "https://twitter.com/deutschetelekom"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/telekom-"
-
-        - name: "Vodafone Group Plc."
-          homepage_url: "https://vodafone.com/"
-          logo: "vodafone_group_plc.svg"
-          description: >
-            Vodafone is one of the world's largest telecommunications companies
-            and provides a range of services including voice, messaging, data and
-            fixed communications. Vodafone has mobile operations in many
-            countries, extensive partner networks, and fixed broadband
-            operations in numerous markets.
-          crunchbase: "https://www.crunchbase.com/organization/vodafone"
-          twitter: "https://twitter.com/VodafoneGroup"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/vodafone"
-
-        - name: "Orange SA"
-          homepage_url: "https://orange.com/"
-          logo: "orange.svg"
-          description: >
-            Orange is one of the world’s leading telecommunications operators
-            with tens of billions of euros in revenues and more than one hundred
-            thousand employees worldwide. The Group has a large global customer
-            base, including hundreds of millions of mobile customers and tens of
-            millions of fixed broadband customers.
-          crunchbase: "https://www.crunchbase.com/organization/orange"
-          twitter: "https://twitter.com/orange"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/orange-services"
-
-        - name: "Telefonica, S.A."
-          homepage_url: "https://telefonica.com/"
-          logo: "telefonica_s_a.svg"
-          description: >
-            Telefónica, S.A. is a Spanish multinational telecommunications
-            company headquartered in Madrid, providing fixed and mobile services
-            and broadband networks in Europe and Latin America.
-          crunchbase: "https://www.crunchbase.com/organization/telefonica"
-          twitter: "https://twitter.com/Telefonica"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/telefonica-global-solutions"
-
-    - name: "Hardware-Providers"
-      items:
-        - name: "Kontron AG"
-          homepage_url: "https://kontron.com"
-          logo: "Kontron.svg"
-          description: >
-            Kontron provides embedded and IoT hardware as well as specialised
-            edge computing platforms, for example Intelligent Network Edge
-            solutions where COTS white-box hardware hosts virtual network
-            functions (vRAN, SD-WAN, routers) at the edge. Their portfolio
-            covers embedded boards, edge servers, rugged systems and a secure
-            operating system (KontronOS) for industrial and edge devices.
-          crunchbase: "https://www.crunchbase.com/organization/kontron"
-          twitter: "https://x.com/KontronElctrncs"
-          extra:
-            linkedin_url: "https://www.linkedin.com/company/kontronag/"
-
-        - name: "Eurotech S.p.A."
-          homepage_url: "https://eurotech.com"
-          logo: "Eurotech.svg"
-          description: >
-            Eurotech offers a full edge hardware portfolio including gateways,
-            servers, AI systems and micro datacenters designed for industrial,
-            transport, energy and utility sectors. Their edge gateways feature
-            ruggedisation, global cellular carrier certification and fieldbus
-            connectivity, while their edge servers support VM and container
-            workloads for on-premises and micro-datacentre setups.
-
-        - name: "Gcore"
-          homepage_url: "https://gcore.com"
-          logo: "Gcore.svg"
-          description: >
-            Gcore is a Luxembourg-based edge cloud and AI infrastructure
-            provider offering distributed low-latency points of presence,
-            edge compute and network services across Europe, supporting edge
-            deployments with geographic reach and scalable infrastructure.
+              
+  - name: "Edge Infrastructure"
+    subcategories:
+      - name: "MNOs"
+        items:
+          - name: "Deutsche Telekom AG"
+            homepage_url: "https://telekom.com/"
+            logo: "deutsche_telekom_ag.svg"
+            description: >
+              Founded in 1995, Deutsche Telekom AG is a Germany-based integrated
+              telecommunications provider, offering its customers around the world
+              a portfolio of services in the areas of telecommunications and
+              information technology.
+            crunchbase: "https://www.crunchbase.com/organization/deutsche-telekom"
+            twitter: "https://twitter.com/deutschetelekom"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/telekom-"
+  
+          - name: "Vodafone Group Plc."
+            homepage_url: "https://vodafone.com/"
+            logo: "vodafone_group_plc.svg"
+            description: >
+              Vodafone is one of the world's largest telecommunications companies
+              and provides a range of services including voice, messaging, data and
+              fixed communications. Vodafone has mobile operations in many
+              countries, extensive partner networks, and fixed broadband
+              operations in numerous markets.
+            crunchbase: "https://www.crunchbase.com/organization/vodafone"
+            twitter: "https://twitter.com/VodafoneGroup"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/vodafone"
+  
+          - name: "Orange SA"
+            homepage_url: "https://orange.com/"
+            logo: "orange.svg"
+            description: >
+              Orange is one of the world’s leading telecommunications operators
+              with tens of billions of euros in revenues and more than one hundred
+              thousand employees worldwide. The Group has a large global customer
+              base, including hundreds of millions of mobile customers and tens of
+              millions of fixed broadband customers.
+            crunchbase: "https://www.crunchbase.com/organization/orange"
+            twitter: "https://twitter.com/orange"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/orange-services"
+  
+          - name: "Telefonica, S.A."
+            homepage_url: "https://telefonica.com/"
+            logo: "telefonica_s_a.svg"
+            description: >
+              Telefónica, S.A. is a Spanish multinational telecommunications
+              company headquartered in Madrid, providing fixed and mobile services
+              and broadband networks in Europe and Latin America.
+            crunchbase: "https://www.crunchbase.com/organization/telefonica"
+            twitter: "https://twitter.com/Telefonica"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/telefonica-global-solutions"
+  - name: "Edge Infrastructure"
+    subcategories:
+      - name: "MNOs"
+        items:
+          - name: "Deutsche Telekom AG"
+            homepage_url: "https://telekom.com/"
+            logo: "deutsche_telekom_ag.svg"
+            description: >
+              Founded in 1995, Deutsche Telekom AG is a Germany-based integrated
+              telecommunications provider, offering its customers around the world
+              a portfolio of services in the areas of telecommunications and
+              information technology.
+            crunchbase: "https://www.crunchbase.com/organization/deutsche-telekom"
+            twitter: "https://twitter.com/deutschetelekom"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/telekom-"
+  
+          - name: "Vodafone Group Plc."
+            homepage_url: "https://vodafone.com/"
+            logo: "vodafone_group_plc.svg"
+            description: >
+              Vodafone is one of the world's largest telecommunications companies
+              and provides a range of services including voice, messaging, data and
+              fixed communications. Vodafone has mobile operations in many
+              countries, extensive partner networks, and fixed broadband
+              operations in numerous markets.
+            crunchbase: "https://www.crunchbase.com/organization/vodafone"
+            twitter: "https://twitter.com/VodafoneGroup"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/vodafone"
+  
+          - name: "Orange SA"
+            homepage_url: "https://orange.com/"
+            logo: "orange.svg"
+            description: >
+              Orange is one of the world’s leading telecommunications operators
+              with tens of billions of euros in revenues and more than one hundred
+              thousand employees worldwide. The Group has a large global customer
+              base, including hundreds of millions of mobile customers and tens of
+              millions of fixed broadband customers.
+            crunchbase: "https://www.crunchbase.com/organization/orange"
+            twitter: "https://twitter.com/orange"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/orange-services"
+  
+          - name: "Telefonica, S.A."
+            homepage_url: "https://telefonica.com/"
+            logo: "telefonica_s_a.svg"
+            description: >
+              Telefónica, S.A. is a Spanish multinational telecommunications
+              company headquartered in Madrid, providing fixed and mobile services
+              and broadband networks in Europe and Latin America.
+            crunchbase: "https://www.crunchbase.com/organization/telefonica"
+            twitter: "https://twitter.com/Telefonica"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/telefonica-global-solutions"
+  
+      - name: "Hardware-Providers"
+        items:
+          - name: "Kontron AG"
+            homepage_url: "https://kontron.com"
+            logo: "Kontron.svg"
+            description: >
+              Kontron provides embedded and IoT hardware as well as specialised
+              edge computing platforms, for example Intelligent Network Edge
+              solutions where COTS white-box hardware hosts virtual network
+              functions (vRAN, SD-WAN, routers) at the edge. Their portfolio
+              covers embedded boards, edge servers, rugged systems and a secure
+              operating system (KontronOS) for industrial and edge devices.
+            crunchbase: "https://www.crunchbase.com/organization/kontron"
+            twitter: "https://x.com/KontronElctrncs"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/kontronag/"
+  
+          - name: "Eurotech S.p.A."
+            homepage_url: "https://eurotech.com"
+            logo: "Eurotech.svg"
+            description: >
+              Eurotech offers a full edge hardware portfolio including gateways,
+              servers, AI systems and micro datacenters designed for industrial,
+              transport, energy and utility sectors. Their edge gateways feature
+              ruggedisation, global cellular carrier certification and fieldbus
+              connectivity, while their edge servers support VM and container
+              workloads for on-premises and micro-datacentre setups.
+  
+          - name: "Gcore"
+            homepage_url: "https://gcore.com"
+            logo: "Gcore.svg"
+            description: >
+              Gcore is a Luxembourg-based edge cloud and AI infrastructure
+              provider offering distributed low-latency points of presence,
+              edge compute and network services across Europe, supporting edge
+              deployments with geographic reach and scalable infrastructure.
