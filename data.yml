@@ -1,7 +1,7 @@
 landscape:
   - name: "Standardization/Initiatives"
     subcategories:
-      - name: "Cross-Cutting Standards & Ecosystem"
+      - name: "Standards Bodies"
         items:
           - name: "ETSI"
             homepage_url: "https://www.etsi.org/technologies/multi-access-edge-computing"
@@ -30,6 +30,63 @@ landscape:
             crunchbase: "https://www.crunchbase.com/organization/3gpp"
             extra:
               linkedin_url: "https://www.linkedin.com/company/3gpp/"
+              
+          - name: "GSMA"
+            homepage_url: "https://www.gsma.com/opengateway/"
+            logo: "GSMA.svg"
+            description: >
+              GSMA Open Gateway defines common APIs enabling operator-edge interoperability.
+              It focuses on harmonizing MEC exposure, QoS APIs, and 5G network capabilities.
+            crunchbase: "https://www.crunchbase.com/organization/gsm-association"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/gsma/"
+              
+          - name: "OPC Foundation"
+            homepage_url: "https://opcfoundation.org"
+            logo: "OPC.svg"
+            description: >
+              The OPC Foundation defines OPC UA standards used for industrial automation
+              and Edge-OT integration. It provides secure, semantically-rich data exchange
+              across industrial and IoT systems.
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/opc-foundation/"
+              
+          - name: "FIWARE Foundation"
+            homepage_url: "https://www.fiware.org"
+            logo: "FIWARE.svg"
+            description: >
+              FIWARE provides open-source standards for smart cities, industry, energy
+              and edge data models (NGSI-LD). Widely adopted across Europe.
+            crunchbase: "https://www.crunchbase.com/organization/fiware-foundation"
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/fiware/"
+              
+      - name: "European Initiatives"
+        items:
+          - name: "GAIA-X"
+            homepage_url: "https://gaia-x.eu"
+            logo: "GAIA-X.svg"
+            description: >
+              GAIA-X develops federated cloud and edge standards to enable data sovereignty,
+              interoperability and transparent service certification in Europe.
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/gaia-x/"
+
+          - name: "EUCloudEdgeIoT"
+            homepage_url: "https://eucloudedgeiot.eu"
+            logo: "EUCloudEdgeIoT.svg"
+            description: >
+              European initiative coordinating research, interoperability frameworks,
+              and reference architectures for the Cloud-Edge-IoT continuum.
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/eucloudedgeiot/"
+              
+          - name: "SovereignEdge.EU"
+            homepage_url: "https://sovereignedge.eu"
+            logo: "SovereignEdgeEU.svg"
+            description: >
+              Consortium promoting open-source, sovereign European edge-cloud infrastructure,
+              focusing on interoperability and federated edge deployments.
               
   - name: "Edge Infrastructure"
     subcategories:
