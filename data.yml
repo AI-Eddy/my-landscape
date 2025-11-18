@@ -197,7 +197,7 @@ landscape:
             description: >
               Major European colocation provider operating highly connected facilities
               that serve as regional hubs for edge compute and cloud adjacency.
-              
+
   - name: "Edge Software Platforms"
     subcategories:
       - name: "Edge OS & Runtime"
