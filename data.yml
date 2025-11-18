@@ -197,3 +197,43 @@ landscape:
             description: >
               Major European colocation provider operating highly connected facilities
               that serve as regional hubs for edge compute and cloud adjacency.
+              
+  - name: "Edge Software Platforms"
+    subcategories:
+      - name: "Edge OS & Runtime"
+        items:
+          - name: "LF Edge"
+            homepage_url: "https://www.lfedge.org"
+            logo: "LFEdge.svg"
+            description: >
+               LF Edge is an open-source initiative under the Linux Foundation delivering a
+               modular, interoperable edge computing stack. Its key projects—EVE-OS, EdgeX Foundry, Akraino, and Open Horizon—provide a unified ecosystem for secure
+               edge operating systems, vendor-neutral middleware, carrier-grade reference
+               blueprints, and large-scale distributed workload orchestration. Together,
+               they enable consistent, cloud-agnostic edge deployments across industrial,
+               telecom, and enterprise environments.
+            extra:
+              linkedin_url: "https://www.linkedin.com/company/lf-edge/"
+
+          - name: "MicroK8s"
+            homepage_url: "https://microk8s.io"
+            logo: "MicroK8s.svg"
+            description: >
+              Canonical's lightweight Kubernetes distribution optimized for edge clusters
+              and on-device container workloads.
+
+          - name: "K3s"
+            homepage_url: "https://k3s.io"
+            logo: "K3s.svg"
+            description: >
+              A minimal Kubernetes distribution built for IoT and edge computing,
+              requiring minimal system resources.
+
+      - name: "Edge Orchestration"
+        items:
+          - name: "OpenNebula ONEedge"
+            homepage_url: "https://opennebula.io/oneedge/"
+            logo: "OpenNebula.svg"
+            description: >
+              EU-based open-source edge orchestration platform enabling elastic
+              federated multi-cloud and edge clusters across distributed locations.
