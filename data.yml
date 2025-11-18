@@ -181,3 +181,19 @@ landscape:
               provider offering distributed low-latency points of presence,
               edge compute and network services across Europe, supporting edge
               deployments with geographic reach and scalable infrastructure.
+
+      - name: "Colocation & Edge Data Centers"
+        items:
+          - name: "Penta Infra"
+            homepage_url: "https://penta-infra.com"
+            logo: "PentaInfra.svg"
+            description: >
+              European operator of edge data centers located near major network
+              exchange points supporting cloud-edge and CDN deployments.
+
+          - name: "Interxion / Digital Realty"
+            homepage_url: "https://www.interxion.com"
+            logo: "Interxion.svg"
+            description: >
+              Major European colocation provider operating highly connected facilities
+              that serve as regional hubs for edge compute and cloud adjacency.
