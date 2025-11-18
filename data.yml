@@ -1,12 +1,12 @@
 landscape:
   - category:
-    name: Cross-Cutting Standards & Ecosystem
+    name: "Cross-Cutting Standards & Ecosystem"
     subcategories:
       - subcategory:
-        name: Cross-Cutting Standards & Ecosystem
+        name: "Cross-Cutting Standards & Ecosystem"
         items:
           - item:
-              name: ETSI
+              name: "ETSI"
               homepage_url: https://www.etsi.org/technologies/multi-access-edge-computing
               logo: ETSI.svg
               description: >
@@ -20,7 +20,7 @@ landscape:
                 linkedin_url: https://www.linkedin.com/company/etsi
 
           - item:
-              name: 3GPP
+              name: "3GPP"
               homepage_url: https://www.3gpp.org/technologies/edge-computing
               logo: 3GPP.svg
               description: >
@@ -36,10 +36,10 @@ landscape:
                 linkedin_url: https://www.linkedin.com/company/3gpp/
 
   - category:
-    name: Edge Infrastructure
+    name: "Edge Infrastructure"
     subcategories:
       - subcategory:
-        name: MNOs
+        name: "MNOs"
         items:
           - item: 
             name: Deutsche Telekom AG
@@ -81,26 +81,26 @@ landscape:
             extra:
               linkedin_url: https://www.linkedin.com/company/telefonica-global-solutions
 
-          - subcategory:
-            name: Hardware-Providers
-            items:
-              - item: 
-                name: Kontron AG
-                homepage_url: https://kontron.com
-                logo: Kontron.svg
-                description: Kontron provides embedded/IoT hardware and specialised edge computing platforms e.g., 'Intelligent Network Edge' solutions where COTS white-box hardware hosts virtual network functions (vRAN, SD-WAN, routers) at the edge. Their portfolio covers embedded boards, edge servers, rugged systems and secure OS (KontronOS) for industrial & edge devices. 
-                crunchbase: https://www.crunchbase.com/organization/kontron
-                twitter: https://x.com/KontronElctrncs
-                extra:
-                linkedin_url: https://www.linkedin.com/company/kontronag/
-              - item: 
-                name: Eurotech S.p.A.
-                homepage_url:  https://eurotech.com
-                logo: Eurotech.svg
-                description: Eurotech offers a full Edge hardware portfolio (gateways, servers, AI systems, micro data-centres) designed for industrial, transport, energy & utility sectors. Their Edge Gateways feature ruggedisation, global cellular carrier certification and fieldbus connectivity. Their Edge Servers support VMs/containers on-premises and micro-datacentre setups. 
-              - item: 
-                name: Gcore
-                homepage_url: https://gcore.com
-                logo: Gcore.svg
-                description: Gcore is a Luxembourg-based edge cloud & AI infrastructure provider offering distributed low-latency PoPs, edge compute and network services across Europe — supporting edge deployments with scale and geographic reach. 
+        - subcategory:
+          name: "Hardware-Providers"
+          items:
+            - item: 
+              name: Kontron AG
+              homepage_url: https://kontron.com
+              logo: Kontron.svg
+              description: Kontron provides embedded/IoT hardware and specialised edge computing platforms e.g., 'Intelligent Network Edge' solutions where COTS white-box hardware hosts virtual network functions (vRAN, SD-WAN, routers) at the edge. Their portfolio covers embedded boards, edge servers, rugged systems and secure OS (KontronOS) for industrial & edge devices. 
+              crunchbase: https://www.crunchbase.com/organization/kontron
+              twitter: https://x.com/KontronElctrncs
+              extra:
+              linkedin_url: https://www.linkedin.com/company/kontronag/
+            - item: 
+              name: Eurotech S.p.A.
+              homepage_url:  https://eurotech.com
+              logo: Eurotech.svg
+              description: Eurotech offers a full Edge hardware portfolio (gateways, servers, AI systems, micro data-centres) designed for industrial, transport, energy & utility sectors. Their Edge Gateways feature ruggedisation, global cellular carrier certification and fieldbus connectivity. Their Edge Servers support VMs/containers on-premises and micro-datacentre setups. 
+            - item: 
+              name: Gcore
+              homepage_url: https://gcore.com
+              logo: Gcore.svg
+              description: Gcore is a Luxembourg-based edge cloud & AI infrastructure provider offering distributed low-latency PoPs, edge compute and network services across Europe — supporting edge deployments with scale and geographic reach. 
 
