@@ -145,7 +145,7 @@ landscape:
             extra:
               linkedin_url: "https://www.linkedin.com/company/telefonica-global-solutions"
   
-      - name: "Hardware-Providers"
+      - name: "Hardware/Service-Providers"
         items:
           - name: "Kontron AG"
             homepage_url: "https://kontron.com"
