@@ -1,43 +1,45 @@
 landscape:
   - category:
-      name: "Cross-Cutting Standards & Ecosystem"
-      subcategories:
-        - subcategory:
-            name: "Cross-Cutting Standards & Ecosystem"
-            items:
-              - item:
-                  name: ETSI
-                  homepage_url: https://www.etsi.org/technologies/multi-access-edge-computing
-                  logo: ETSI.svg
-                  description: >
-                    The Multi-access Edge Computing (MEC) initiative is an Industry
-                    Specification Group (ISG) within ETSI. The purpose of the ISG is
-                    to create a standardized, open environment which allows efficient
-                    and seamless integration of applications from vendors, service
-                    providers, and third parties across multi-vendor MEC platforms.
-                  crunchbase: https://www.crunchbase.com/organization/etsi"
-                  extra:
-                    linkedin_url: https://www.linkedin.com/company/etsi
-
-              - item:
-                  name: 3GPP
-                  homepage_url: https://www.3gpp.org/technologies/edge-computing
-                  logo: 3GPP.svg
-                  description: >
-                    The 3rd Generation Partnership Project (3GPP) unites seven
-                    telecommunications standard development organizations (ARIB,
-                    ATIS, CCSA, ETSI, TSDSI, TTA, TTC), known as Organizational
-                    Partners. 3GPP specifications cover cellular telecommunications
-                    technologies, including radio access, core network, and service
-                    capabilities, providing a complete system description and
-                    interworking hooks for non-3GPP access networks.
-                  crunchbase: https://www.crunchbase.com/organization/3gpp
-                  extra:
-                    linkedin_url: https://www.linkedin.com/company/3gpp/
-
-  - name: "Edge Infrastructure"
+    name: Cross-Cutting Standards & Ecosystem
     subcategories:
-      - name: "MNOs"
+      - subcategory:
+        name: Cross-Cutting Standards & Ecosystem
+        items:
+          - item:
+              name: ETSI
+              homepage_url: https://www.etsi.org/technologies/multi-access-edge-computing
+              logo: ETSI.svg
+              description: >
+                The Multi-access Edge Computing (MEC) initiative is an Industry
+                Specification Group (ISG) within ETSI. The purpose of the ISG is
+                to create a standardized, open environment which allows efficient
+                and seamless integration of applications from vendors, service
+                providers, and third parties across multi-vendor MEC platforms.
+              crunchbase: https://www.crunchbase.com/organization/etsi"
+              extra:
+                linkedin_url: https://www.linkedin.com/company/etsi
+
+          - item:
+              name: 3GPP
+              homepage_url: https://www.3gpp.org/technologies/edge-computing
+              logo: 3GPP.svg
+              description: >
+                The 3rd Generation Partnership Project (3GPP) unites seven
+                telecommunications standard development organizations (ARIB,
+                ATIS, CCSA, ETSI, TSDSI, TTA, TTC), known as Organizational
+                Partners. 3GPP specifications cover cellular telecommunications
+                technologies, including radio access, core network, and service
+                capabilities, providing a complete system description and
+                interworking hooks for non-3GPP access networks.
+              crunchbase: https://www.crunchbase.com/organization/3gpp
+              extra:
+                linkedin_url: https://www.linkedin.com/company/3gpp/
+
+  - category:
+    name: Edge Infrastructure
+    subcategories:
+      - subcategory:
+        name: MNOs
         items:
           - item: 
             name: Deutsche Telekom AG
@@ -79,25 +81,26 @@ landscape:
             extra:
               linkedin_url: https://www.linkedin.com/company/telefonica-global-solutions
 
-      - name: "Hardware-Provider"
-        items:
-        - item: 
-          name: Kontron AG
-          homepage_url: https://kontron.com
-          logo: Kontron.svg
-          description: Kontron provides embedded/IoT hardware and specialised edge computing platforms e.g., 'Intelligent Network Edge' solutions where COTS white-box hardware hosts virtual network functions (vRAN, SD-WAN, routers) at the edge. Their portfolio covers embedded boards, edge servers, rugged systems and secure OS (KontronOS) for industrial & edge devices. 
-          crunchbase: https://www.crunchbase.com/organization/kontron
-          twitter: https://x.com/KontronElctrncs
-          extra:
-          linkedin_url: https://www.linkedin.com/company/kontronag/
-        - item: 
-          name: Eurotech S.p.A.
-          homepage_url:  https://eurotech.com
-          logo: Eurotech.svg
-          description: Eurotech offers a full Edge hardware portfolio (gateways, servers, AI systems, micro data-centres) designed for industrial, transport, energy & utility sectors. Their Edge Gateways feature ruggedisation, global cellular carrier certification and fieldbus connectivity. Their Edge Servers support VMs/containers on-premises and micro-datacentre setups. 
-        - item: 
-          name: Gcore
-          homepage_url: https://gcore.com
-          logo: Gcore.svg
-          description: Gcore is a Luxembourg-based edge cloud & AI infrastructure provider offering distributed low-latency PoPs, edge compute and network services across Europe — supporting edge deployments with scale and geographic reach. 
+          - subcategory:
+            name: Hardware-Providers
+            items:
+              - item: 
+                name: Kontron AG
+                homepage_url: https://kontron.com
+                logo: Kontron.svg
+                description: Kontron provides embedded/IoT hardware and specialised edge computing platforms e.g., 'Intelligent Network Edge' solutions where COTS white-box hardware hosts virtual network functions (vRAN, SD-WAN, routers) at the edge. Their portfolio covers embedded boards, edge servers, rugged systems and secure OS (KontronOS) for industrial & edge devices. 
+                crunchbase: https://www.crunchbase.com/organization/kontron
+                twitter: https://x.com/KontronElctrncs
+                extra:
+                linkedin_url: https://www.linkedin.com/company/kontronag/
+              - item: 
+                name: Eurotech S.p.A.
+                homepage_url:  https://eurotech.com
+                logo: Eurotech.svg
+                description: Eurotech offers a full Edge hardware portfolio (gateways, servers, AI systems, micro data-centres) designed for industrial, transport, energy & utility sectors. Their Edge Gateways feature ruggedisation, global cellular carrier certification and fieldbus connectivity. Their Edge Servers support VMs/containers on-premises and micro-datacentre setups. 
+              - item: 
+                name: Gcore
+                homepage_url: https://gcore.com
+                logo: Gcore.svg
+                description: Gcore is a Luxembourg-based edge cloud & AI infrastructure provider offering distributed low-latency PoPs, edge compute and network services across Europe — supporting edge deployments with scale and geographic reach. 
 
